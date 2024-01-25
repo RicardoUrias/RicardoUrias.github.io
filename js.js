@@ -1,5 +1,4 @@
 function login(event) {
-    event.preventDefault(); // Detiene la acción predeterminada del formulario
 
     var emailInput = document.getElementById("email");
     var passwordInput = document.getElementById("password");
