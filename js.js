@@ -5,7 +5,7 @@ function login() {
     // Aquí puedes agregar la lógica de autenticación, por ejemplo, verificar en una base de datos
 
     // Validación de correo electrónico usando una expresión regular simple
-var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     if (emailRegex.test(email) && password.length >= 8) {
         alert("Inicio de sesión exitoso");
