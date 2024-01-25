@@ -14,13 +14,14 @@ function login(event) {
         alert("Inicio de sesión exitoso");
         // No es necesario return true; aquí, ya que la acción predeterminada se realizará
     } else {
-        emailInput.value = "No_Email";
-        passwordInput.value = "No_Pw";
         alert("Error en el inicio de sesión. Verifica tus credenciales.");
-        // Borra los datos en los campos de correo electrónico y contraseña
 
+        // Borra los datos en los campos de correo electrónico y contraseña
+        emailInput.value = "";
+        passwordInput.value = "";
     }
 }
 
 document.getElementById("loginForm").addEventListener("submit", login);
+
 
