@@ -1,4 +1,4 @@
-function login() {
+function login(event) {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
@@ -7,10 +7,11 @@ function login() {
     
     if (emailRegex.test(email) && password.length >= 8) {
         alert("Inicio de sesión exitoso");
-        return true;  // Envía el formulario
+        // No es necesario return true; aquí, ya que la acción predeterminada se realizará
     } else {
         alert("Error en el inicio de sesión. Verifica tus credenciales.");
-        return false;  // No envía el formulario
+        event.preventDefault();  // Detiene la acción predeterminada del formulario
     }
 }
 
+document.getElementById("loginForm").addEventListener("submit", login);
