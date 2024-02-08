@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Modifica el título y el contenido en el clon
         clone.querySelector("[data-id='title']").textContent = "Product";
         clone.querySelector("[data-id='content']").textContent = "It's a new item";
+        clone.querySelector("[data-id='imagen']").textContent = imgElement.src;
 
+        
         // Agrega el clon a la lista
         itemList.appendChild(clone);
     });
